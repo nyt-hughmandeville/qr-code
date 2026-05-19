@@ -4,7 +4,11 @@ This is a simple QR code generator built using client-side JavaScript only. It a
 
 <https://nyt-hughmandeville.github.io/qr-code/>
 
-![QR Code Generator](./qr-code-generator.png)
+<img src="./qr-code-generator.png" alt="QR Code Generator" width="400" />
+
+## Colors
+
+For the color values use hex RBG or RGBA values, or common names for colors (e.g. red, #f00, f007, #ff0000, #ff0000f7). Use #0000 for transparent. You can also use the color selector to choose a color.
 
 ## Run locally
 
@@ -14,10 +18,6 @@ make open      # open the running site in your browser
 ```
 
 `make serve` uses Python 3's built-in `http.server`. Any static web server works — opening `index.html` directly via `file://` will not load the QR library because of browser ESM/CORS restrictions.
-
-## Colors
-
-For the color values use hex RBG or RGBA values, or common names for colors (e.g. red, #f00, f007, #ff0000, #ff0000f7). Use #0000 for transparent. You can also use the color selector to choose a color.
 
 ## Deploy to GitHub Pages
 

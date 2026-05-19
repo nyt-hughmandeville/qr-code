@@ -131,6 +131,7 @@ canvas {
   max-width: 100%;
   height: auto !important;
   aspect-ratio: 1 / 1;
+  min-width: 0;
   display: block;
 }
 
