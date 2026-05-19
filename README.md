@@ -32,5 +32,5 @@ No build step or workflow file is required — every file is static.
 
 - [index.html](index.html) — markup
 - [style.css](style.css) — styles
-- [app.js](app.js) — ES module that imports [`qrcode@1.5.4`][https://www.npmjs.com/package/qrcode](https://www.npmjs.com/package/qrcode) from [esm.sh](https://esm.sh) (an ESM CDN for npm packages) and wires up the form, canvas, and downloads
-- [Material Symbols icons](https://fonts.google.com/icons) loaded from [Google Fonts](https://fonts.google.com/).
+- [app.js](app.js) — ES module that imports [`qrcode@1.5.4`](https://www.npmjs.com/package/qrcode) from [esm.sh](https://esm.sh) (an ESM CDN for npm packages) and wires up the form, canvas, and downloads
+- Uses [Material Symbols icons](https://fonts.google.com/icons) and [Google Fonts](https://fonts.google.com/).
