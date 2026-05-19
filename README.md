@@ -24,13 +24,13 @@ make open      # open the running site in your browser
 1. Push `main` to GitHub.
 2. [Repo → **Settings → Pages**](https://github.com/nyt-hughmandeville/qr-code/settings/pages).
 3. Source: **Deploy from a branch**, Branch: `main` / `(root)`, Save.
-4. Site goes live at `https://nyt-hughmandeville.github.io/qr-code/`.
+4. Site goes live at <https://nyt-hughmandeville.github.io/qr-code/>.
 
 No build step or workflow file is required — every file is static.
 
 ## Implementation
 
-- `index.html` — markup
-- `style.css` — styles
-- `app.js` — ES module that imports [`qrcode@1.5.4`](https://www.npmjs.com/package/qrcode) from [esm.sh](https://esm.sh) (an ESM CDN for npm packages) and wires up the form, canvas, and downloads
+- <index.html> — markup
+- <style.css> — styles
+- <app.js> — ES module that imports [`qrcode@1.5.4`](https://www.npmjs.com/package/qrcode) from [esm.sh](https://esm.sh) (an ESM CDN for npm packages) and wires up the form, canvas, and downloads
 - [Material Symbols icons](https://fonts.google.com/icons) loaded from [Google Fonts](https://fonts.google.com/).
