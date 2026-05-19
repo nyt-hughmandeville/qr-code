@@ -2,6 +2,10 @@
 
 This is a simple QR code generator built using client-side JavaScript only. It allows you to create QR codes for URLs or text. It lets you choose the color and size of the QR code. And it lets you choose the output format to download as (JPEG, PNG, or SVG).
 
+<https://nyt-hughmandeville.github.io/qr-code/>
+
+![QR Code Generator](./qr-code-generator.png)
+
 ## Run locally
 
 ```sh
@@ -18,7 +22,7 @@ For the color values use hex RBG or RGBA values, or common names for colors (e.g
 ## Deploy to GitHub Pages
 
 1. Push `main` to GitHub.
-2. Repo → **Settings → Pages**.
+2. [Repo → **Settings → Pages**](https://github.com/nyt-hughmandeville/qr-code/settings/pages).
 3. Source: **Deploy from a branch**, Branch: `main` / `(root)`, Save.
 4. Site goes live at `https://nyt-hughmandeville.github.io/qr-code/`.
 
