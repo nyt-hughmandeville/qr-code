@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QR Code Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>QR Code Generator</h1>
+    <p class="tagline">Generate QR codes for URLs and text.</p>
+
+    <div class="field">
+      <label for="text">URL or Text</label>
+      <input id="text" type="text" spellcheck="false" value="https://www.nytimes.com/" />
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label for="width">Width (px)</label>
+        <input id="width" type="number" min="30" max="10000" value="400" />
+      </div>
+      <div class="field">
+        <label for="margin">Margin (dots)</label>
+        <input id="margin" type="number" min="0" max="100" value="2" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label for="fg-color">Foreground</label>
+        <div class="color-row">
+          <input id="fg-color" type="text" spellcheck="false" value="#000000" />
+          <input id="fg-color-picker" type="color" value="#000000" title="Pick foreground color" />
+        </div>
+      </div>
+      <div class="field">
+        <label for="bg-color">Background</label>
+        <div class="color-row">
+          <input id="bg-color" type="text" spellcheck="false" value="#ffffff" />
+          <input id="bg-color-picker" type="color" value="#ffffff" title="Pick background color" />
+        </div>
+      </div>
+    </div>
+
+    <p class="hint">
+      Colors: hex (#000), RGBA hex (#ff0000aa), or names (red, blue, transparent).
+      Use #0000 for transparent.
+    </p>
+
+    <div class="message" id="message"></div>
+
+    <div class="preview">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="buttons">
+      <button id="download-jpeg" title="Download as JPEG"><span class="material-symbols-outlined">download</span>JPEG</button>
+      <button id="download-png" title="Download as PNG"><span class="material-symbols-outlined">download</span>PNG</button>
+      <button id="download-svg" title="Download as SVG"><span class="material-symbols-outlined">download</span>SVG</button>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
